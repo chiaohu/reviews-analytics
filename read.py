@@ -8,6 +8,9 @@ with open('reviews.txt', 'r') as f:
             print(len(data))
 print(len(data))
 
+sum_len = 0
+for d in data:
+	sum_len += len(d)
 
-
+print('留言的平均長度是', sum_len/len(data))
 #print(data[0]) #印出第一筆
